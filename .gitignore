@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vercel/
+.freebuff/
+screenshots/
+.DS_Store
+*.local
+*.log
+.env
+.env.*
+!.env.example

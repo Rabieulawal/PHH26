@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan Hardware Hack — TeenHacks</title>
+    <meta
+      name="description"
+      content="Pakistan's first teen-only hardware hackathon."
+    />
+    <meta name="theme-color" content="#06090b" />
+    <link rel="preload" href="/fonts/barlow-condensed-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/switzer-400.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <main>
+      <div id="sequence" class="sequence">
+        <section id="hero" class="hero">
+          <div class="hero__blueprint" aria-hidden="true"></div>
+          <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+          <div class="hero__scrim" aria-hidden="true"></div>
+
+          <div class="hero__content">
+            <div class="hero__stage">
+              <div class="hero__beat" data-beat="0" data-active="true">
+                <p class="hero__statement">
+                  Pakistan's first teen-only<br />hardware hackathon.
+                </p>
+              </div>
+
+              <div class="hero__beat" data-beat="1">
+                <p class="hero__statement hero__statement--fact">
+                  48 hours. Two 12-hour builds.<br />Ages 13&ndash;19.
+                </p>
+              </div>
+
+              <div class="hero__beat" data-beat="2">
+                <p class="hero__statement hero__statement--fact">
+                  Lahore. February 2027.
+                </p>
+              </div>
+            </div>
+
+            <h1 class="hero__name">Pakistan Hardware Hack</h1>
+          </div>
+        </section>
+      </div>
+
+      <section class="requirements" id="requirements" aria-labelledby="requirements-title">
+        <div class="requirements__inner">
+          <div class="requirements__intro">
+            <div class="requirements__title-block" data-reveal>
+              <h2 class="requirements__title" id="requirements-title">Who can<br />attend?</h2>
+              <p>You must be a student aged 13–19. Attendance is free.</p>
+            </div>
+
+            <dl class="requirements__facts" aria-label="Attendance requirements" data-reveal style="--reveal-delay: 90ms">
+              <div class="requirement-row">
+                <dt>Age</dt>
+                <dd class="requirement-row__value">13–19</dd>
+                <dd class="requirement-row__detail">Ages 13 through 19, inclusive.</dd>
+              </div>
+              <div class="requirement-row">
+                <dt>Student</dt>
+                <dd class="requirement-row__value">Currently enrolled</dd>
+                <dd class="requirement-row__detail">School, college, and university students may apply.</dd>
+              </div>
+              <div class="requirement-row">
+                <dt>Cost</dt>
+                <dd class="requirement-row__value">Free</dd>
+                <dd class="requirement-row__detail">There is no fee to attend.</dd>
+              </div>
+            </dl>
+
+            <aside class="university-note" aria-label="University student eligibility" data-reveal style="--reveal-delay: 160ms">
+              <p><strong>At university?</strong> If you’re 13–19 and currently enrolled, use the separate university application. University graduates aren’t eligible.</p>
+            </aside>
+          </div>
+
+          <div class="experience" aria-labelledby="experience-title">
+            <div class="experience__heading" data-reveal>
+              <h3 id="experience-title">Choose your experience level</h3>
+              <p>Pick the level that best matches your hardware experience. Experienced students then choose Robotics or Gadgets.</p>
+            </div>
+
+            <div class="experience-paths">
+              <article class="experience-path experience-path--beginner" data-reveal style="--reveal-delay: 80ms">
+                <h4>Beginner</h4>
+                <p>For teens with less hardware-building experience.</p>
+                <p class="experience-path__result">One beginner track</p>
+              </article>
+
+              <article class="experience-path experience-path--experienced" data-reveal style="--reveal-delay: 150ms">
+                <h4>Experienced</h4>
+                <p>For teens with more hardware-building experience.</p>
+                <div class="experience-path__selection">
+                  <p>Choose one track</p>
+                  <ul class="experience-path__tracks">
+                    <li>Robotics</li>
+                    <li>Gadgets</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsors" id="sponsors" aria-labelledby="sponsors-title">
+        <div class="sponsors__inner">
+          <div class="sponsors__pitch" data-reveal>
+            <h2 class="sponsors__title" id="sponsors-title">Sponsor Pakistan Hardware Hack</h2>
+            <p class="sponsors__description">We’re looking for organizations to support the event.</p>
+          </div>
+
+          <div class="sponsors__contact" data-reveal style="--reveal-delay: 100ms">
+            <a class="sponsors__cta" href="mailto:Hello@teenhacks.org?subject=Sponsorship%20inquiry">
+              <span>Sponsor us</span>
+              <span class="sponsors__arrow" aria-hidden="true">↗</span>
+            </a>
+            <p>Email us at<br /><a href="mailto:Hello@teenhacks.org">Hello@teenhacks.org</a></p>
+          </div>
+
+          <div class="sponsors__roster" aria-label="Sponsor listing">
+            <ul class="sponsors__list" aria-label="Sponsors"></ul>
+            <p class="sponsors__empty">No sponsors announced yet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="registration" id="registration" aria-labelledby="registration-title">
+        <div class="registration__blueprint" aria-hidden="true"></div>
+        <div class="registration__inner">
+          <div class="registration__copy" data-reveal>
+            <h2 class="registration__title" id="registration-title">Pre-register<br />for TeenHacks.</h2>
+            <p class="registration__note">Share a few details to hear about updates and next steps. Pre-registration is free and does not confirm a place at the event.</p>
+          </div>
+          <div class="registration__actions" data-reveal style="--reveal-delay: 110ms">
+            <a class="registration__cta" href="/register.html">
+              <span>Pre-register</span>
+              <span class="registration__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="registration__school">
+            <h3>Bringing a school team?</h3>
+            <p>Schools pay a small fee to help cover event costs and keep student registration free. We don’t make a profit.</p>
+            <a href="mailto:Hello@teenhacks.org?subject=School%20team%20inquiry">Email us about bringing a team</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
