@@ -1,6 +1,6 @@
 # Pakistan Hardware Hack
 
-The TeenHacks landing page for Pakistan Hardware Hack, built with Vite and Three.js.
+The TeenHacks landing page for Pakistan Hardware Hack, built with Vite and CSS. It uses event photography, a responsive event and track layout, and an embedded Zite pre-registration form.
 
 ## Run locally
 

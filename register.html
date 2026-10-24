@@ -3,30 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#06090b" />
+    <meta name="theme-color" content="#f3efe2" />
     <meta
       name="description"
-      content="Pre-register for Pakistan Hardware Hack."
+      content="Pre-register for Pakistan Hardware Hack 2027 in Lahore."
     />
-    <title>Pre-register — Pakistan Hardware Hack</title>
+    <title>Pre-register — Pakistan Hardware Hack 2027</title>
+    <link rel="preload" href="/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/switzer-400.woff2" as="font" type="font/woff2" crossorigin />
   </head>
   <body class="register-page">
-    <div class="register-page__blueprint" aria-hidden="true"></div>
-    <header class="register-page__header">
-      <a class="register-page__back" href="/#registration">← Back to TeenHacks</a>
-      <span class="register-page__brand">Pakistan Hardware Hack</span>
+    <a class="skip-link" href="#registration-form">Skip to the pre-registration form</a>
+
+    <header class="register-header">
+      <div class="register-header__inner">
+        <a class="register-header__back" href="/#event">← Back to Pakistan Hardware Hack</a>
+        <span class="register-header__brand">TeenHacks</span>
+      </div>
     </header>
 
-    <main class="register-page__main">
-      <section class="register-page__intro" aria-labelledby="register-title">
-        <h1 class="register-page__title" id="register-title">Pre-register.</h1>
-        <p class="register-page__note">For current students aged 13–19. Attendance is free. University students follow a separate application process.</p>
+    <main class="register-main">
+      <section class="register-intro" aria-labelledby="register-title">
+        <div>
+          <h1 id="register-title">Pre-register.</h1>
+        </div>
+        <p class="register-intro__note">For currently enrolled students aged 13–19. Attendance is free. Pre-registration shares updates and next steps; it does not confirm a place.</p>
       </section>
 
-      <div class="register-page__embed" data-zite-id="myphsyqt12" data-zite-embed-type="standard" data-zite-inherit-parameters role="region" aria-label="TeenHacks pre-registration form"></div>
+      <div class="register-facts" aria-label="Event details">
+        <span>27–28 February 2027</span>
+        <span>Lahore, Pakistan</span>
+        <span>University students use a separate application</span>
+      </div>
+
+      <section class="register-form-shell" id="registration-form" aria-label="Pre-registration" tabindex="-1">
+        <p class="register-status" id="register-status" role="status" aria-live="polite">Connecting to the pre-registration form…</p>
+        <div
+          class="register-form"
+          id="register-form-embed"
+          data-zite-id="myphsyqt12"
+          data-zite-embed-type="standard"
+          data-zite-inherit-parameters
+          role="region"
+          aria-label="TeenHacks pre-registration form"
+        ></div>
+        <div class="register-fallback" id="register-fallback" hidden>
+          <p>The form hasn’t appeared yet. Check your connection and <a href="/register.html">try loading it again</a>, or email <a href="mailto:Hello@teenhacks.org">Hello@teenhacks.org</a> for help.</p>
+        </div>
+      </section>
+      <noscript>
+        <p class="register-fallback">The form needs JavaScript to load. Email <a href="mailto:Hello@teenhacks.org">Hello@teenhacks.org</a> and the TeenHacks team can help.</p>
+      </noscript>
     </main>
 
-    <script src="https://server.zite.com/embed/v2-zite/"></script>
+    <script async src="https://server.zite.com/embed/v2-zite/"></script>
     <script type="module" src="/src/register.js"></script>
   </body>
 </html>
