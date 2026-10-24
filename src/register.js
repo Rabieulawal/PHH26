@@ -10,7 +10,7 @@ if (embed && status && fallback) {
   const markReady = () => {
     if (embed.childElementCount === 0) return false;
 
-    status.textContent = 'The pre-registration form is ready.';
+    status.textContent = 'The registration form is ready.';
     fallback.hidden = true;
     window.clearTimeout(timeoutId);
     observer.disconnect();
@@ -23,7 +23,7 @@ if (embed && status && fallback) {
   if (!markReady()) {
     timeoutId = window.setTimeout(() => {
       if (embed.childElementCount > 0) return;
-      status.textContent = 'The pre-registration form is taking longer than expected.';
+      status.textContent = 'The registration form is taking longer than expected.';
       fallback.hidden = false;
     }, 8000);
   }
