@@ -17,25 +17,11 @@
 
     <header class="register-header">
       <div class="register-header__inner">
-        <a class="register-header__back" href="/#event">← Back to Pakistan Hardware Hack</a>
-        <span class="register-header__brand">TeenHacks</span>
+        <a class="register-header__back" href="/#event" aria-label="Back to Pakistan Hardware Hack">← Back</a>
       </div>
     </header>
 
     <main class="register-main">
-      <section class="register-intro" aria-labelledby="register-title">
-        <div>
-          <h1 id="register-title">Pre-register.</h1>
-        </div>
-        <p class="register-intro__note">For currently enrolled students aged 13–19. Attendance is free. Pre-registration shares updates and next steps; it does not confirm a place.</p>
-      </section>
-
-      <div class="register-facts" aria-label="Event details">
-        <span>27–28 February 2027</span>
-        <span>Lahore, Pakistan</span>
-        <span>University students use a separate application</span>
-      </div>
-
       <section class="register-form-shell" id="registration-form" aria-label="Pre-registration" tabindex="-1">
         <p class="register-status" id="register-status" role="status" aria-live="polite">Connecting to the pre-registration form…</p>
         <div
@@ -50,10 +36,10 @@
         <div class="register-fallback" id="register-fallback" hidden>
           <p>The form hasn’t appeared yet. Check your connection and <a href="/register.html">try loading it again</a>, or email <a href="mailto:Hello@teenhacks.org">Hello@teenhacks.org</a> for help.</p>
         </div>
+        <noscript>
+          <p class="register-fallback">The form needs JavaScript to load. Email <a href="mailto:Hello@teenhacks.org">Hello@teenhacks.org</a> and the TeenHacks team can help.</p>
+        </noscript>
       </section>
-      <noscript>
-        <p class="register-fallback">The form needs JavaScript to load. Email <a href="mailto:Hello@teenhacks.org">Hello@teenhacks.org</a> and the TeenHacks team can help.</p>
-      </noscript>
     </main>
 
     <script async src="https://server.zite.com/embed/v2-zite/"></script>
