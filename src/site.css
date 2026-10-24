@@ -665,8 +665,8 @@ h3 {
   position: relative;
   isolation: isolate;
   display: block;
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
+  width: 100%;
+  margin-inline: 0;
   overflow: hidden;
   padding-block: clamp(0.85rem, 1.8vw, 1.4rem);
   background: var(--ink);
