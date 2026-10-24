@@ -127,77 +127,168 @@
           </div>
 
           <div class="track-paths">
-            <article class="track-path">
-              <h3>Beginner</h3>
-              <div class="track-path__intro">
-                <p>One beginner track, built for students who are newer to making hardware.</p>
-              </div>
-              <figure class="track-path__photo track-path__photo--beginner">
-                <div class="track-path__photo-frame">
-                  <img
-                    src="/images/microcontroller-build.jpg"
-                    alt="A microcontroller on a breadboard, ready for a first circuit test."
-                    width="1205"
-                    height="1600"
-                    loading="lazy"
-                    decoding="async"
-                  />
+            <div class="track-column track-column--beginner">
+              <article class="track-path">
+                <h3>Beginner</h3>
+                <div class="track-path__intro">
+                  <p>One beginner track, built for students who are newer to making hardware.</p>
                 </div>
-              </figure>
-            </article>
-
-            <article class="track-path track-path--experienced">
-              <h3>Experienced</h3>
-              <div class="track-path__intro">
-                <p>Choose the field you want to build in.</p>
-              </div>
-              <figure class="track-path__photo track-path__photo--pcb">
-                <div class="track-path__photo-frame">
-                  <img
-                    src="/images/hack-club-pcb.jpg"
-                    alt="A custom black circuit board with gold character artwork and electronic components."
-                    width="900"
-                    height="1600"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </figure>
-              <ul class="track-options" aria-label="Experienced track options">
-                <li class="track-option">
-                  <div class="track-option__photo">
+                <figure class="track-path__photo track-path__photo--beginner">
+                  <div class="track-path__photo-frame">
                     <img
-                      src="/images/robot-demo.jpg"
-                      alt="A wheeled robot prototype being shown indoors, with people gathered nearby."
-                      width="1600"
-                      height="1200"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div>
-                    <h4>Robotics</h4>
-                    <p>Build a machine that moves, senses, or responds.</p>
-                  </div>
-                </li>
-                <li class="track-option">
-                  <div class="track-option__photo">
-                    <img
-                      src="/images/hero-robot-prototype.jpeg"
-                      alt="A handmade character-shaped gadget with illuminated blue eyes."
-                      width="1200"
+                      src="/images/microcontroller-build.jpg"
+                      alt="A microcontroller on a breadboard, ready for a first circuit test."
+                      width="1205"
                       height="1600"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
-                  <div>
-                    <h4>Gadgets</h4>
-                    <p>Make an interactive device with a character of its own.</p>
+                </figure>
+              </article>
+              <div class="maker-gallery__copy">
+                <h2 id="maker-gallery-title">You can make <span>this.</span></h2>
+                <p>From a first circuit to a robot that moves.</p>
+                <button
+                  class="maker-gallery__toggle"
+                  type="button"
+                  aria-controls="maker-gallery-track"
+                  aria-pressed="false"
+                  aria-label="Toggle gallery movement"
+                ><span aria-hidden="true">Ⅱ</span></button>
+              </div>
+            </div>
+            <div class="track-column track-column--experienced">
+              <article class="track-path track-path--experienced">
+                <h3>Experienced</h3>
+                <div class="track-path__intro">
+                  <p>Choose the field you want to build in.</p>
+                </div>
+                <figure class="track-path__photo track-path__photo--pcb">
+                  <div class="track-path__photo-frame">
+                    <img
+                      src="/images/hack-club-pcb.jpg"
+                      alt="A custom black circuit board with gold character artwork and electronic components."
+                      width="900"
+                      height="1600"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
-                </li>
-              </ul>
-            </article>
+                </figure>
+                <ul class="track-options" aria-label="Experienced track options">
+                  <li class="track-option">
+                    <div class="track-option__photo">
+                      <img
+                        src="/images/robot-demo.jpg"
+                        alt="A wheeled robot prototype being shown indoors, with people gathered nearby."
+                        width="1600"
+                        height="1200"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div>
+                      <h4>Robotics</h4>
+                      <p>Build a machine that moves, senses, or responds.</p>
+                    </div>
+                  </li>
+                  <li class="track-option">
+                    <div class="track-option__photo">
+                      <img
+                        src="/images/hero-robot-prototype.jpeg"
+                        alt="A handmade character-shaped gadget with illuminated blue eyes."
+                        width="1200"
+                        height="1600"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div>
+                      <h4>Gadgets</h4>
+                      <p>Make an interactive device with a character of its own.</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="maker-gallery" aria-label="Student hardware projects">
+        <div class="maker-gallery__viewport">
+          <div class="maker-gallery__track" id="maker-gallery-track">
+            <div class="maker-gallery__group">
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/wheeled-robot-prototype.jpg" alt="A hand-wired rover with yellow wheels and a battery pack." width="900" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/microcontroller-build.jpg" alt="A microcontroller set up on a breadboard." width="1205" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/hack-club-pcb.jpg" alt="A black circuit board with gold artwork and electronic components." width="900" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/robot-demo.jpg" alt="A wheeled robot prototype being demonstrated indoors." width="1600" height="1200" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/hero-robot-prototype.jpeg" alt="A handmade robot with illuminated blue eyes." width="1200" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/pico-computer-game.jpeg" alt="A PicoComputer FLIP handheld keyboard running a colorful pixel game." width="2336" height="1825" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/digital-oscilloscope.jpg" alt="A DIY digital oscilloscope circuit on a breadboard displays a waveform." width="690" height="517" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/maker-workshop.jpg" alt="A small electronics build being assembled at a workshop table." width="183" height="275" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/battery-stick-figure.jpg" alt="A glowing stick figure robot made from a battery and simple components." width="625" height="1045" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/diy-game-boy.jpg" alt="A custom Game Boy Pocket with visible components and colorful buttons." width="1414" height="2000" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/mars-rover.jpg" alt="A large 3D-printed rover prototype displayed on a workshop table." width="4032" height="3024" loading="lazy" decoding="async" /></div>
+              </article>
+            </div>
+            <div class="maker-gallery__group" aria-hidden="true">
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/wheeled-robot-prototype.jpg" alt="" width="900" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/microcontroller-build.jpg" alt="" width="1205" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/hack-club-pcb.jpg" alt="" width="900" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/robot-demo.jpg" alt="" width="1600" height="1200" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/hero-robot-prototype.jpeg" alt="" width="1200" height="1600" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/pico-computer-game.jpeg" alt="" width="2336" height="1825" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/digital-oscilloscope.jpg" alt="" width="690" height="517" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/maker-workshop.jpg" alt="" width="183" height="275" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/battery-stick-figure.jpg" alt="" width="625" height="1045" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/diy-game-boy.jpg" alt="" width="1414" height="2000" loading="lazy" decoding="async" /></div>
+              </article>
+              <article class="maker-gallery__card">
+                <div class="maker-gallery__image"><img src="/images/mars-rover.jpg" alt="" width="4032" height="3024" loading="lazy" decoding="async" /></div>
+              </article>
+            </div>
           </div>
         </div>
       </section>

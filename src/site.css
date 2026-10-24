@@ -495,12 +495,21 @@ h3 {
 
 .tracks {
   background: var(--paper-deep);
+  padding-block-end: clamp(1.25rem, 2.5vw, 2rem);
 }
 
 .track-paths {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(2rem, 7vw, 7rem);
+  align-items: stretch;
+}
+
+.track-column {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  min-width: 0;
 }
 
 .track-path {
@@ -668,6 +677,147 @@ h3 {
   color: var(--ink-soft);
   font-size: 0.82rem;
   line-height: 1.45;
+}
+
+.maker-gallery {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  overflow: hidden;
+  padding-block: clamp(0.85rem, 1.8vw, 1.4rem);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.maker-gallery__copy {
+  min-width: 0;
+  margin-block-start: auto;
+  padding-block-start: clamp(2rem, 5vw, 3.75rem);
+}
+
+.maker-gallery__copy h2 {
+  max-width: 7ch;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(2.65rem, 4.4vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+}
+
+.maker-gallery__copy h2 span {
+  color: #f0785d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.9em;
+  font-style: italic;
+  letter-spacing: -0.055em;
+}
+
+.maker-gallery__copy p {
+  max-width: 18rem;
+  margin: 0.75rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.maker-gallery__toggle {
+  display: grid;
+  width: 2.9rem;
+  height: 2.9rem;
+  margin-block-start: 1.2rem;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #f0785d;
+  color: var(--ink);
+  font: 500 1rem/1 var(--body);
+  cursor: pointer;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.maker-gallery__toggle:hover {
+  transform: rotate(-8deg) scale(1.06);
+  background: #ff9676;
+}
+
+.maker-gallery__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.maker-gallery__track,
+.maker-gallery__group {
+  display: flex;
+  width: max-content;
+}
+
+.maker-gallery__track {
+  animation: maker-gallery-scroll 68s linear infinite;
+  will-change: transform;
+}
+
+.maker-gallery__track.is-paused,
+.maker-gallery__viewport:hover .maker-gallery__track,
+.maker-gallery__viewport:focus-within .maker-gallery__track {
+  animation-play-state: paused;
+}
+
+.maker-gallery__group {
+  flex: none;
+  align-items: center;
+  gap: clamp(0.8rem, 1.5vw, 1.4rem);
+  padding-inline-end: clamp(0.8rem, 1.5vw, 1.4rem);
+}
+
+.maker-gallery__card {
+  flex: none;
+  width: clamp(15rem, 22vw, 21rem);
+  overflow: hidden;
+  border: 1px solid rgba(243, 239, 226, 0.24);
+  border-radius: 0.45rem;
+  background: rgba(243, 239, 226, 0.08);
+  transition: transform 180ms ease;
+}
+
+.maker-gallery__card:nth-child(2n) {
+  transform: translateY(0.45rem) rotate(1deg);
+}
+
+.maker-gallery__card:nth-child(3n) {
+  transform: translateY(-0.35rem) rotate(-0.8deg);
+}
+
+.maker-gallery__card:hover {
+  z-index: 1;
+  transform: translateY(-0.25rem) rotate(0deg);
+}
+
+.maker-gallery__image {
+  width: 100%;
+  aspect-ratio: 1.18 / 1;
+  overflow: hidden;
+  background: rgba(243, 239, 226, 0.08);
+}
+
+.maker-gallery__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.maker-gallery__card:hover .maker-gallery__image img {
+  transform: scale(1.035);
+}
+
+@keyframes maker-gallery-scroll {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .partners__inner {
@@ -989,6 +1139,14 @@ h3 {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .maker-gallery {
+    padding-block: 0.85rem;
+  }
+
+  .maker-gallery__card {
+    width: clamp(13rem, 34vw, 17rem);
+  }
 }
 
 @media (max-width: 700px) {
@@ -1081,6 +1239,18 @@ h3 {
     gap: 2rem;
   }
 
+  .maker-gallery__copy h2 {
+    font-size: clamp(2.5rem, 10vw, 3.3rem);
+  }
+
+  .maker-gallery__copy {
+    padding-block-start: 2rem;
+  }
+
+  .maker-gallery__card {
+    width: min(72vw, 19rem);
+  }
+
   .track-path {
     grid-template-columns: minmax(0, 1fr) minmax(7rem, 0.48fr);
     column-gap: 0.85rem;
@@ -1147,7 +1317,19 @@ h3 {
   }
 
   .button,
-  .site-nav a {
+  .site-nav a,
+  .maker-gallery__image img,
+  .maker-gallery__card,
+  .maker-gallery__toggle {
     transition: none;
+  }
+
+  .maker-gallery__track {
+    animation: none;
+    transform: none;
+  }
+
+  .maker-gallery__toggle {
+    display: none;
   }
 }
